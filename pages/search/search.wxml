@@ -1,0 +1,57 @@
+<!--pages/search/search.wxml-->
+<view class="searchContainer">
+    <!-- 搜索框 -->
+    <view class="topSearchInput">
+        <view class="mainInput">
+            <text class="iconfont icon-sousuokuang searchIcon"></text>
+            <input type="text" placeholder="{{hotDefaultKeyWord}}" placeholder-class="placClass" bindinput="handlerInput" 
+            value="{{keyWord}}"
+            />
+        </view>
+        <text hidden="{{!keyWord}}" class="iconfont icon-quxiao offIcon" bindtap="handlerOff"></text>
+        <text class="cancalInput">取消</text>
+    </view>
+
+    <view wx:if="{{historyList.length}}" class="historyContianer">
+        <view class="history">
+        <!-- 历史提示 -->
+            <text class="hint">历史</text>
+        <!-- 搜索历史 -->
+            <text class="historyContent" wx:for="{{historyList}}" wx:key="item">{{item}}</text>
+            
+            <!-- 全部删除 -->
+            <text class="iconfont icon-shanchu  delIcon" bindtap="allDeleHistory"></text>
+        </view>
+    </view>
+
+    <!-- 热搜榜 -->
+    <view class="hotListContainer">
+        <!-- 标题 -->
+        <view class="hotLabel">热搜榜
+        </view>
+
+        <!-- 搜索结果 -->
+        <block wx:if="{{keyWord}}"> 
+            <view class="resultContainer">
+                <view class="resultItem" wx:for="{{searchList}}" wx:key="id">
+                    <text class="iconfont icon-sousuokuang       resultIcon"></text>
+
+                    <text class="resultContent">{{item.name}}</text>
+                </view>
+            </view>
+        </block>
+
+        <!-- 主要列表 -->
+        <block wx:else="">
+            <view class="hotList">
+                <view class="hotListItem" wx:for="{{hotDefaultList}}" wx:key="score">
+                    <text class="sort">{{index + 1}}</text>
+                    <text class="hotContent">{{item.searchWord}}</text>
+                    <image class="hotImg" src="{{item.iconUrl}}"></image>
+                </view>
+
+
+            </view>
+        </block>
+    </view>
+</view>

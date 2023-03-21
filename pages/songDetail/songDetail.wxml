@@ -1,0 +1,46 @@
+<!--pages/songDetail/songDetail.wxml-->
+<view class="songContainer">
+
+    <view class="songName">{{songAuthInfo.name}}</view>
+
+    <view class="bor"></view>
+    <!-- 摇杆 -->
+    <view class="needle {{isPlay? 'donghuaPlay' : ''}}">
+        <image  src="/static/images/song/needle.png"></image>
+    </view>
+    <!-- 磁盘 -->
+    <view class="diskContainer {{isPlay? 'diskAnimation' : ''}}">
+        <image class="disk" src="/static/images/song/disc.png"></image>
+        <image class="songImg" src="{{songAuthInfo.picUrl}}"></image>
+    </view>
+
+    <!-- 进度条 -->
+    <view   class="progressContainer">
+        <text>{{currentTime}}</text>
+        <!-- 总进度条 -->
+        <view class="sumProgress">
+        <!-- 实时进度条 -->
+            <view class="realtimeProgress"
+                style="width: {{currentWidth + 'rpx'}};"
+            >
+            <!-- 实时滚动圆球 -->
+                <view class="realtimeProgressBall">
+                    
+                </view>
+            </view>
+        </view>
+        <text>{{finalTime}}</text>
+    </view>
+
+    <!-- 底部按钮组件 -->
+    <view class="iconfontContainer"> 
+        <text class="iconfont icon-danquxunhuan"></text>
+        <text class="iconfont icon-shangyishoushangyige" bindtap="handlerPrev"></text>
+        <text class="iconfont {{isPlay?'icon-bofang':'icon-zanting'}} big"
+            bindtap="handlerPlay"
+        ></text>
+        <text class="iconfont icon-xiayigexiayishou" bindtap="handlerNext"></text>
+        <text class="iconfont icon-liebiao2"></text>
+    </view>
+
+</view>

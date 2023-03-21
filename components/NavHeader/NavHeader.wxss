@@ -1,0 +1,27 @@
+/* components/NavHeader/NavHeader.wxss */
+.recommendContainer{
+    display: flex;
+    flex-direction: column;
+    margin:30rpx 0 ;
+    padding: 20rpx;
+}
+.recommendContainer .recommendHeader{
+    margin-bottom: 20rpx;
+    color: #333;
+    opacity: 0.7;
+}
+.recommendContainer .recommendFoolter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+}
+.recommendContainer .recommendFoolter .more{
+    font-size: 30rpx;
+    border: 1px solid #333;
+    padding: 10rpx;
+    text-align: center;
+    border-radius: 20rpx;
+    box-sizing: border-box;
+    font-weight: 100;
+}

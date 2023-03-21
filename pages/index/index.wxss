@@ -1,0 +1,110 @@
+/* pages/index/index.wxss */
+swiper-item image{
+    height: 300rpx;
+    widows: 100%;
+}
+swiper{
+    height: 300rpx;
+}
+.iconfontContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.iconfontContainer .icfontItem{
+    display: flex;
+    flex-direction: column;
+    font-size: 30rpx;
+    text-align: center;
+}
+.iconfontContainer .icfontItem text{
+    margin-top: 20rpx;
+}
+.iconfontContainer .icfontItem .iconfont{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    line-height: 100rpx;
+    text-align: center;
+    background-color: rgb(240, 19, 19);
+    color: white;
+}
+
+
+
+.recommendInfo {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: 250rpx;
+}
+.recommendInfo .recommendInfoItem{
+    display: flex;
+    flex-direction: column;
+    font-size: 30rpx;
+    margin: 0 10rpx;
+    width: 200rpx;
+}
+
+.recommendInfo .recommendInfoItem image{
+    width: 200rpx;
+    height: 200rpx;
+}
+.recommendInfo .recommendInfoItem text{
+	overflow: hidden;				
+	text-overflow: ellipsis;		
+    display: -webkit-box;
+    -webkit-box-orient: vertical;			
+	-webkit-line-clamp: 2;		
+}
+
+
+.swiperMusicMaxBox{
+    width: 100%;
+    /* height: 600rpx; */
+    height: 700rpx;
+}
+.swiperMusicMaxBox .titleText{
+    font-size: 30rpx;
+    margin-left: 20rpx;
+}
+.swiperMusicMaxBox .swiperMusicAloneBox{
+    display: flex;
+    flex-direction: column;
+    height: 800rpx;
+    width: 400rpx;
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+.swiperMusicMaxBox .swiperMusicAloneBox .musicItem{
+    height: 200rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+.swiperMusicMaxBox .swiperMusicAloneBox .musicItem .musicItemNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50rpx;
+}
+.swiperMusicMaxBox .swiperMusicAloneBox .musicItem .musicItemName{
+    height: 150rpx;
+    line-height: 150rpx;
+    margin-left: 40rpx;
+    display: block;
+    width: 200rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.swiperMusicMaxBox .swiperMusicAloneBox .musicItem .musicItemImg{
+    width: 200rpx;
+    height: 100%;
+    border-radius: 20rpx;
+}
+.musicItem image{
+    width: 100%;
+}

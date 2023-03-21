@@ -1,0 +1,149 @@
+/* pages/search/search.wxss */
+.searchContainer{
+    padding: 0 20rpx;
+}
+.topSearchInput{
+    width: 100%;
+    padding: 10rpx;
+    height: 70rpx;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.010);
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.topSearchInput .mainInput{
+    flex: 1;
+    position: relative;
+}
+.topSearchInput .mainInput .searchIcon{
+    line-height: 50rpx;
+    float: left;
+}
+.topSearchInput .mainInput input{
+    height: 50rpx;
+    margin-left: 50rpx;
+}
+.offIcon{
+    position: absolute;
+    z-index: 99;
+    right: 80rpx;
+    font-size: 25rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    margin-right: 20rpx;
+}
+
+.placClass{
+    font-size: 30rpx;
+    font-weight: bolder;
+    line-height:50rpx;
+    opacity: 0.5;
+}
+
+.cancalInput{
+    margin-right: 20rpx;
+    font-size: 30rpx;
+    font-weight: bolder;
+    height: 50rpx;
+    line-height: 50rpx;
+}
+
+
+.hotListContainer{
+    margin-top: 40rpx;
+}
+.hotListContainer .hotLabel{
+    font-weight: bolder;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10rpx;
+}
+
+.hotListContainer .hotList{
+    margin-top: 30rpx;
+    
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.hotListContainer .hotList .hotListItem{   
+    margin-top:40rpx; 
+    width: 50%;
+}
+.hotListContainer .hotList .hotListItem .sort{
+    margin-right: 20rpx;
+}
+.hotListContainer .hotList .hotListItem .hotContent{
+    font-size: 25rpx;
+}
+.hotImg{
+    margin-left: 10rpx;
+    width: 25rpx;
+    height: 25rpx;
+}
+
+.resultContainer{
+    margin-top: 20rpx;
+    padding-left: 10rpx;
+}
+.resultContainer .resultItem{
+    display: flex;
+    height: 60rpx;
+    box-sizing: border-box;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    margin-bottom: 20rpx;
+    padding-bottom: 10rpx;
+}
+.resultIcon{
+    line-height: 60rpx;
+}
+.resultContainer .resultContent{
+    margin-left: 30rpx;
+    line-height: 60rpx;
+    flex: 1;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}   
+
+
+.historyContianer{
+    margin-top: 20rpx;
+}
+.historyContianer .history{
+    position: relative;
+}
+.historyContianer .hint{
+    height: 50rpx;
+    line-height: 50rpx;
+    font-weight:bolder;
+    font-size: 30rpx;
+}
+.historyContianer .history{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.historyContianer .historyContent{
+    height: 50rpx;
+    background-color: rgb(211, 211, 211);
+    font-size: 30rpx;
+    margin-left: 30rpx;
+    line-height: 50rpx;
+    padding: 0 10rpx;
+    border-radius: 20rpx;
+    margin-bottom: 20rpx;
+}
+.historyContianer .delIcon{
+    position: absolute;
+    right: 5rpx;
+    bottom: 25rpx;
+    font-size: 40rpx;
+}

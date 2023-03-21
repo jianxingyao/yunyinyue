@@ -1,0 +1,41 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/recommendSong/recommendSong",
+        "pages/search/search",
+        "pages/personal/personal",
+        "pages/login/login",
+        "pages/video/video",
+        "pages/songDetail/songDetail"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#d43c33",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "云音乐"
+    },
+    "tabBar": {
+        "color": "#333",
+        "selectedColor": "#d43c33",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "云音乐首页",
+                "iconPath": "/static/images/tabs/home.png",
+                "selectedIconPath": "/static/images/tabs/tab-home-current.png"
+            },
+            {
+                "pagePath": "pages/video/video",
+                "text": "云音乐视频",
+                "iconPath": "/static/images/tabs/tab-cart.png",
+                "selectedIconPath": "/static/images/tabs/tab-cate-current.png"
+            },
+            {
+                "pagePath": "pages/personal/personal",
+                "text": "个人中心",
+                "iconPath": "/static/images/tabs/tab-my.png",
+                "selectedIconPath": "/static/images/tabs/tab-my-current.png"
+            }
+        ]
+    }
+}

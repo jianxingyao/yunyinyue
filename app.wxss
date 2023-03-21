@@ -1,0 +1,6 @@
+/**app.wxss**/
+@import '/static/icfont/icfon.wxss';
+
+page{
+    height: 100%;
+}
